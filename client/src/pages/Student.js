@@ -3,7 +3,7 @@ const Student = () => {
     <div>
       <form className="signup" onSubmit={handleSubmit}>
         <h3>Sign Up</h3>
-        <label>Email : </label>
+        <label>Email Address : </label>
         <input type="email" />
         <label>Password : </label>
         <input type="password" />
