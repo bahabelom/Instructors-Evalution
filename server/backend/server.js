@@ -6,7 +6,11 @@ const userRoutes = require("./routes/user");
 const { default: mongoose } = require("mongoose");
 // express app
 const app = express();
-
+const corsOptions = {
+  origion: "*",
+  Credentials: true,
+  optionSuccessStatus: 200,
+};
 // middleware
 app.use(express.json());
 
