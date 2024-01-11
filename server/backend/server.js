@@ -25,7 +25,7 @@ app.use("/api/user", userRoutes);
 // Connect to a database
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect("mongodb+srv://bahabelom:godknows@cluster0.f4gpdsb.mongodb.net/?retryWrites=true&w=majority")
   .then(() => {
     app.listen(process.env.PORT, () => {
       console.log(
